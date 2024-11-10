@@ -428,7 +428,7 @@ En resumen, el contraste de hipótesis indica que no podemos rechazar la hipóte
 # Ejercicio 9: Contraste de Hipótesis (Prueba Chi-Cuadrado)
 **Pregunta**: 
 Una muestra de tamaño $n = 20$ de una población con varianza desconocida es $x = \{5, 7, 9, 6, 8, 10, 7, 9, 8, 10, 5, 7, 9, 6, 8, 10, 7, 9, 8, 10\}$
-Realiza un contraste de hipótesis para probar si la varianza poblacional es igual a 4 con un nivel de significación $\alpha = 0.05$.
+Realiza un contraste de hipótesis para probar si la varianza poblacional es igual a 4 con un nivel de significación $\alpha = 0.05$. Recuerda que $\frac{s^{2}(n-1)}{\sigma^{2}} \sim \chi^{2}_{n-1}$, es decir, el estadístico, insesgado para la varianza poblacional $\sigma^{2}$, $\frac{s^{2}(n-1)}{\sigma^{2}}$ se distribuye como una $\chi^{2}_{n-1}$, siendo $n$ el tamaño muestral, $s^{2}$ la cuasivarianza muestral.
 
 **Solución**:
 

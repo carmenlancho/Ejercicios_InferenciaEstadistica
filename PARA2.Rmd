@@ -31,7 +31,7 @@ $$
 Se pide demostrar que el estadístico $T$ es un estimador consistente del parámetro binomial $p$.
 
 ### Ejercicio 3: Método de Máxima Verosimilitud
-**Pregunta**: Sea $X_1\,ldots,X_n$ una muestra aleatoria de una población cuya distribución es de Poisson con parámetro $\lambda$. Obtener el estimador de máxima verosimilitud de $\lambda$.
+**Pregunta**: Sea $X_1\,\ldots,X_n$ una muestra aleatoria de una población cuya distribución es de Poisson con parámetro $\lambda$. Obtener el estimador de máxima verosimilitud de $\lambda$.
 
 ### Ejercicio 4: Tamaño muestral
 **Pregunta**: Una empresa quiere realizar una encuesta para estimar el nivel de satisfacción de sus clientes con un nuevo producto. La empresa desea que la estimación tenga un nivel de confianza del 95% y un margen de error del 5%. Basado en estudios previos, se espera que la proporción de clientes satisfechos sea aproximadamente del 70%. ¿Cuál es el tamaño muestral mínimo necesario para la encuesta?
@@ -48,7 +48,11 @@ Se desea calcular un intervalo de confianza del 95% para la diferencia de las me
 **Pregunta**: Realiza un contraste de hipótesis para el problema planteado en el ejercicio anterior y proporciona un $p-valor$.
 
 ### Ejercicio 7: Estimación en el muestreo
-**Pregunta**: Mediante el empleo de `R`, genera 100 muestras, cada una de tamaño 15, de una distribución normal de media 120 y desviación estándar 8. Para cada muestra, construye un IC del $95\%$ para la $\sigma^2$. ¿Cuántos de estos intervalos contienen el verdadero valor de 64 para $\sigma^2$? ¿Este resultado está de acuerdo con lo que esperabas?
+**Pregunta**: Mediante el empleo de `R`, genera 100 muestras, cada una de tamaño 15, de una distribución normal de media 120 y desviación estándar 8. Para cada muestra, construye un IC del $95\%$ para la $\sigma^2$. ¿Cuántos de estos intervalos contienen el verdadero valor de 64 para $\sigma^2$? ¿Este resultado está de acuerdo con lo que esperabas? Debes comenzar por derivar el IC para la varianza poblacional $\sigma^{2}$. Para ello, recuerda que la cuasivarianza muestral
+$$ s^{2} = \frac{1}{n-1} \sum_{i=1}^{n}(x_i - \bar{x})^{2}$$
+es un estimador insesgado para la varianza poblacional $\sigma^{2}$ y que, bajo condiciones de normalidad, 
+$$s^{2} \sim \frac{\sigma^{2} \chi^{2}_{n-1}} {n-1}.$$
+
 
 
 ### Ejercicio 8: Muestreo

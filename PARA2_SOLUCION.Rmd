@@ -193,7 +193,7 @@ Esto muestra que la varianza de \( T \) tiende a cero a medida que \( n \) aumen
 Dado que \( T \) es un estimador no sesgado de \( p \) y su varianza tiende a cero cuando \( n \) tiende a infinito, podemos concluir que \( T \) es un estimador consistente de \( p \). Por lo tanto, hemos demostrado que el estadístico \( T = \frac{x}{n} \) es un estimador consistente del parámetro de proporción \( p \).
 
 # Ejercicio 3: Método de Máxima Verosimilitud
-**Pregunta**: Sea $X_1\,ldots,X_n$ una muestra aleatoria de una población cuya distribución es de Poisson con parámetro $\lambda$. Obtener el estimador de máxima verosimilitud de $\lambda$.
+**Pregunta**: Sea $X_1\,\ldots,X_n$ una muestra aleatoria de una población cuya distribución es de Poisson con parámetro $\lambda$. Obtener el estimador de máxima verosimilitud de $\lambda$.
 
 **Solución**:
 
@@ -457,7 +457,10 @@ No hay suficiente evidencia para afirmar que hay una diferencia significativa en
 
 # Ejercicio 7: Estimación en el muestreo
 
-**Pregunta**: Mediante el empleo de `R`, genera 100 muestras, cada una de tamaño 15, de una distribución normal de media 120 y desviación estándar 8. Para cada muestra, construye un IC del $95\%$ para la $\sigma^2$. ¿Cuántos de estos intervalos contienen el verdadero valor de 64 para $\sigma^2$? ¿Este resultado está de acuerdo con lo que esperabas?
+**Pregunta**: Mediante el empleo de `R`, genera 100 muestras, cada una de tamaño 15, de una distribución normal de media 120 y desviación estándar 8. Para cada muestra, construye un IC del $95\%$ para la $\sigma^2$. ¿Cuántos de estos intervalos contienen el verdadero valor de 64 para $\sigma^2$? ¿Este resultado está de acuerdo con lo que esperabas? Debes comenzar por derivar el IC para la varianza poblacional $\sigma^{2}$. Para ello, recuerda que la cuasivarianza muestral
+$$ s^{2} = \frac{1}{n-1} \sum_{i=1}^{n}(x_i - \bar{x})^{2}$$
+es un estimador insesgado para la varianza poblacional $\sigma^{2}$ y que, bajo condiciones de normalidad, 
+$$s^{2} \sim \frac{\sigma^{2} \chi^{2}_{n-1}} {n-1}.$$
 
 **Solución**:
 Para calcular los intervalos de confianza para \(\sigma^2\), necesitamos ajustar un poco la fórmula del intervalo de confianza para \(\sigma\). La fórmula para un intervalo de confianza del 95% para \(\sigma^2\) es:
